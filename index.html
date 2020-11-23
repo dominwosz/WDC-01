@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weekly Dev Challenge - challenge 1</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <script src="https://kit.fontawesome.com/83740f4a4d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="logo-top">
+    <img src="img/TOP_LOGO.svg" class="logo" alt="Masteralb - logo">
+  </header>
+
+  <main class="flex-container">
+    <section class="form-container" id="register-form">
+      <h3 class="form-name">register form</h3>
+      <form action="">
+        <div class="input-icon">
+          <i class="icon fas fa-user"></i><input type="text" class="form-field" minlength="3" maxlength="20" placeholder="Username" required="required">
+        </div>
+        <div class="input-icon">
+          <i class="icon fas fa-lock"></i><input type="password" class="form-field" id="pass" minlength="8" placeholder="Password" required="required">
+        </div>
+        <div class="input-icon">
+          <i class="icon fas fa-lock"></i><input type="password" class="form-field" id="confirm-pass" minlength="8" placeholder="Confirm Password" required="required">
+        </div>
+        <div class="input-icon">
+          <i class="icon fas fa-envelope"></i><input type="email" class="form-field" placeholder="Email" required="required">
+        </div>
+        <div class="input-icon">
+          <i class="icon fas fa-map-marker-alt"></i><input type="text" class="form-field" placeholder="Your Location">
+        </div>
+        <label for="accept-box" class="check-label"><input type="checkbox" class="check" id="accept-box" required="required"> I have read and accept the terms of use.</label>
+        <button class="btn large">Sign up</button>
+      </form>
+    </section>
+
+    <section class="form-container" id="contact-form">
+      <h3 class="form-name">send email</h3>
+      <form action="">
+        <div class="input-icon">
+          <i class="icon fas fa-user"></i><input type="text" class="form-field" placeholder="Your Name" required="required">
+        </div>
+        <div class="input-icon">
+          <i class="icon fas fa-envelope"></i><input type="email" class="form-field" placeholder="Your Email" required="required">
+        </div>
+        <textarea cols="30" rows="10" class="form-field msg" placeholder="Type your message ..." required="required"></textarea>
+        <label for="send-copy" class="check-label"><input type="checkbox" class="check" id="send-copy"> Send a copy to my Email</label>
+        <button class="btn large">Send Email</button>
+      </form>
+    </section>
+
+    <section class="form-container" id="sign-in-form">
+      <h3 class="form-name">sign in form</h3>
+      <form action="">
+        <div class="input-icon">
+          <i class="icon fas fa-user"></i><input type="text" class="form-field" placeholder="Username" required="required">
+        </div>
+        <div class="input-icon">
+          <i class="icon fas fa-lock"></i><input type="password" class="form-field" placeholder="Password" required="required">
+        </div>
+        <div>
+          <label for="remember-me" class="check-label"><input type="checkbox" class="check" id="remember-me"> Remember me</label>
+          <button class="btn small">Sign in</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="form-container" id="recover-form">
+      <h3 class="form-name">recover form</h3>
+      <form action="">
+        <div class="input-icon">
+          <i class="icon fas fa-envelope"></i><input type="email" class="form-field" placeholder="Enter your Email" required="required">
+        </div>
+        <div class="input-icon">
+          <i class="icon fas fa-mobile-alt"></i><input type="tel" class="form-field" placeholder="Enter your Phone number" required="required">
+        </div>
+        <div>
+          <button class="btn small">Send</button>
+          <button class="btn small" disabled>Done</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="form-container" id="subscribe-form">
+      <h3 class="form-name">subscribe form</h3>
+      <form action="">
+        <div class="input-icon">
+          <i class="icon fas fa-envelope"></i><input type="email" class="form-field" placeholder="Enter your Email" required="required">
+        </div>
+        <div>
+          <button class="btn small">Subscribe</button>
+          <button class="btn small red">No, Thanks</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="logo-bottom"><img src="img/LOGO.svg" class="logo" alt="Masteralb - logo"></section>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

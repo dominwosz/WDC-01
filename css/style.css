@@ -1,0 +1,231 @@
+/* CSS reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ----------------------------- */
+
+
+body {
+  max-width: 1050px;
+  margin: 0 auto;
+  background: url("../img/BackgroundFit.jpg") no-repeat fixed center;
+  background-size: cover;
+  padding: 55px 0;
+}
+
+.logo-top {
+  padding-bottom: 23px;
+}
+
+.logo {
+  display: block;
+  margin: auto;
+  opacity: .3;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-around;
+  height: 1180px;
+}
+
+.form-container,
+.logo-bottom {
+  position: relative;
+  width: 460px;
+  padding: 20px;
+}
+
+.form-name {
+  margin-bottom: 40px;
+  text-align: center;
+  text-shadow: 1px 1.73px 2px rgb(43, 1, 0, .75);
+  font: 300 32px "TitilliumText22L", sans-serif;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+form {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  border-radius: 3px;
+  background-color: #F4F4F4;
+  z-index: auto;
+}
+
+form::after {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  bottom: -20px;
+  right: -20px;
+  border-radius: 3px;
+  background-color: rgb(0, 0, 0, .23);
+  z-index: -1;
+}
+
+
+.form-field,
+.check-label {
+  font: 100 16px "TitilliumText22L", sans-serif;
+  color: #AFAFAF;
+}
+
+.form-field,
+.check,
+.btn {
+  width: 100%;
+  border: 1px solid #C6C6C6;
+  border-radius: 3px;
+  background-color: #F8F8F8;
+}
+
+.form-field {
+  box-shadow: 1px 1.73px #fff;
+  color: black;
+}
+
+.input-icon {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.input-icon>input {
+  padding-left: 80px;
+  border-radius: 3px;
+  line-height: 40px;
+}
+
+.input-icon:last-of-type {
+  margin-bottom: 0px;
+}
+
+.icon {
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  width: 60px;
+  padding: 5px 0;
+  border-right: .5px solid #DEDEDE;
+  text-align: center;
+  font-size: 24px;
+  color: #DEDEDE;
+}
+
+.msg {
+  height: 230px;
+  margin-top: 20px;
+  resize: none;
+  padding: 20px;
+}
+
+.check {
+  -webkit-appearance: none;
+  position: relative;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 14px;
+  vertical-align: middle;
+  border-radius: 3px;
+  background-color: #F8F8F8;
+}
+
+.check:checked::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12.67px;
+  height: 12.67px;
+  border-radius: 3px;
+  background: linear-gradient(to bottom, #a3d840 0%, #7ec32d 100%);
+  box-shadow: .5px .87px #fff;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+  font-size: 17px;
+}
+
+.btn {
+  background: linear-gradient(to bottom, #a3d840 0%, #7ec32d 100%);
+  border: 1px solid #3A9A00;
+  box-shadow: .5px .87px #fff;
+  font: 300 18px "TitilliumText22L", sans-serif;
+  color: #fff;
+  text-shadow: .56px .83px #51850E;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn:disabled:hover {
+  cursor: not-allowed;
+}
+
+.btn:disabled::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 3px;
+  background-color: #fff;
+  opacity: .36;
+}
+
+.btn.large {
+  line-height: 48px;
+}
+
+.btn.small {
+  width: 150px;
+  line-height: 41px;
+}
+
+.btn:disabled {
+  position: relative;
+}
+
+form>div:last-of-type {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn.red {
+  background: linear-gradient(to bottom, #f65f70 0%, #f03747 100%);
+  border: 1px solid #A2202A;
+}
+
+.form-field:focus,
+.check:focus {
+  outline: none;
+}
+
+.form-field:valid:focus,
+.check:valid:focus {
+  box-shadow: 0 0 2px 1px green;
+}
+
+.form-field:invalid:focus,
+.check:invalid:focus {
+  box-shadow: 0 0 2px 1px crimson;
+}
+
+.bad-pass {
+  box-shadow: 0 0 2px 1px crimson;
+}

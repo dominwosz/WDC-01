@@ -1,0 +1,40 @@
+@media(max-width: 1050px) {
+    body {
+        width: 100%;
+    }
+
+    .flex-container {
+        height: unset;
+    }
+
+    .form-container,
+    .logo-top,
+    .logo-bottom {
+        width: 80%;
+        margin: auto;
+    }
+
+    .logo {
+        width: 90%;
+    }
+}
+
+@media(max-width: 520px) {
+    .form-container {
+        width: 100%;
+    }
+
+    #sign-in-form>form>div:nth-child(3) {
+        flex-direction: column;
+        flex-grow: 1;
+        flex-basis: 100%;
+    }
+
+    #sign-in-form>form>div:nth-child(3)>button {
+        width: unset;
+    }
+
+    #sign-in-form>form>div:nth-child(2) {
+        margin-bottom: unset;
+    }
+}
